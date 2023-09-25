@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: blanchedalmond;
+}
+
+img {
+  height: 300px;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  border: 6px solid olive;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
