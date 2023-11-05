@@ -7,6 +7,10 @@
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
     url(Pics/DSCF3508.JPG);
+
+  
+    
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -102,6 +106,9 @@ button:hover span {
   height: 45px;
   width: 45px;
   opacity: 0.72;
+  transition: all 0.3s ease-in-out; 
+  transition-delay: 0.1s;
+  transform-style: preserve-3d;
 }
 
 .insta {
