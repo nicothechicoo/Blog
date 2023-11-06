@@ -6,36 +6,50 @@
     <script src="calculator.js" defer></script>
   </head>
   <body>
+    <div class="banner">
+      <div class="navbar">
+          <img src="Pics/LOGO 1.png" class="logo">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Favoritepics.html">Pictures</a></li>
+              <li><a href="videos.html">Videos</a></li>
+              <li><a href="Aboutme.html">About</a></li>
+              <li><a href="Calculator.html">Calculator</a></li>
+          </ul>
+      </div>
     <div class="calcbody">
     <h1>Calculator</h1>
     <p>Enter two numbers and an operator to calculate the result.</p>
       <form>
-        <div class="answerbox">
+        <div data-previous-operand class="answerbox">
+          <input type="text" name="display">
+        </div>
+        <div data-current-operand class="answerbox">
           <input type="text" name="display">
         </div>
        
         
         <div class="numbuttons">
-            <input type="button" value="1" onclick="display.value += '1' ">
-            <input type="button" value="2" onclick="display.value += '2' ">
-            <input type="button" value="3" onclick="display.value += '3' ">
-            <input type="button" value="4" onclick="display.value += '4' ">
-            <input type="button" value="5" onclick="display.value += '5' ">
-            <input type="button" value="6" onclick="display.value += '6' ">
-            <input type="button" value="7" onclick="display.value += '7' ">
-            <input type="button" value="8" onclick="display.value += '8' ">
-            <input type="button" value="9" onclick="display.value += '9' ">
-            <input type="button" value="0" onclick="display.value += '0' ">
-            <input type="button" value="." onclick="display.value += '.' ">
-            <input type="button" value="+" onclick="display.value += '+' ">
-            <input type="button" value="-" onclick="display.value += '-' ">
-            <input type="button" value="*" onclick="display.value += '*' ">
-            <input type="button" value="/" onclick="display.value += '/' ">
-            <input type="button" value="AC" onclick="display.value = '' ">
+            <input data-number type="button" id="1" value="1" onclick="display.value += '1' ">
+            <input data-number type="button" id="2" value="2" onclick="display.value += '2' ">
+            <input data-number type="button" id="3" value="3" onclick="display.value += '3' ">
+            <input data-number type="button" id="4" value="4" onclick="display.value += '4' ">
+            <input data-number type="button" id="5" value="5" onclick="display.value += '5' ">
+            <input data-number type="button" id="6" value="6" onclick="display.value += '6' ">
+            <input data-number type="button" id="7" value="7" onclick="display.value += '7' ">
+            <input data-number type="button" id="8" value="8" onclick="display.value += '8' ">
+            <input data-number type="button" id="9" value="9" onclick="display.value += '9' ">
+            <input data-number type="button" id="0" value="0" onclick="display.value += '0' ">
+            <input data-number type="button" id="." value="." onclick="display.value += '.' ">
+            <input data-operand type="button" id="+" value="+" onclick="display.value += '+' ">
+            <input data-operand type="button" id="-" value="-" onclick="display.value += '-' ">
+            <input data-operand type="button" id="*" value="*" onclick="display.value += '*' ">
+            <input data-operand type="button" id="/" value="/" onclick="display.value += '/' ">
+            <input data-AC type="button" id="AC" value="AC" onclick="display.value = '' ">
         </form>
         </div>
       <br />
-      <button class="submit" name="submit" value="submit">Calculate</button>
+      <button data-equals id="submit" name="submit" value="submit">Calculate</button>
     </div>
   </div>
   </body>
