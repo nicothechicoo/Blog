@@ -53,3 +53,12 @@
     opacity: 0.73;
     cursor: pointer;
   }
+
+  iframe {
+    width: 90%;
+    height: 100%;
+    border: none;
+    margin: auto;
+    display: block;
+    
+  }
